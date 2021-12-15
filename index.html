@@ -1,94 +1,435 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html class="no-js" lang="fr">
 <head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Title Page-->
-    <title>Connexion</title>
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet"/>
 
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
 
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- TITLE OF SITE -->
+    <title>ViteMonVol</title>
 
-    <!-- Main CSS-->
-    <link href="css/main.css" rel="stylesheet" media="all">
+    <!-- favicon img -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+
+    <!--hover.css-->
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+
+    <!--datepicker.css-->
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"/>
+
+    <!-- range css-->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css"/>
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css"/>
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
-        <div class="wrapper wrapper--w790">
-            <div class="card card-5">
-                <div class="card-heading">
-                    <h2 class="title">Event Registration Form</h2>
-                </div>
-                <div class="card-body">
-                    <form method="POST">
-                        <div class="form-row m-b-55">
-                            <div class="name">Name</div>
-                            <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="first_name">
-                                            <label class="label--desc">first name</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<!-- main-menu Start -->
+<header class="top-area">
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="logo">
+                        <a href="index.html">
+                            ViteMon<span>Vol</span>
+                        </a>
+                    </div><!-- /.logo-->
+                </div><!-- /.col-->
+                <div class="col-sm-10">
+                    <div class="main-menu">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button><!-- / button-->
+                        </div><!-- /.navbar-header-->
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="smooth-menu"><a href="#home">Acceuil</a></li>
+                                <li class="smooth-menu"><a href="#subs">Inscription</a></li>
+                                <li>
+                                    <button class="book-btn">Connexion
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="form-row m-b-55">
-                            <div class="name">Prenom</div>
-                            <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="last_name">
-                                            <label class="label--desc">last name</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Email</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
+            <div class="home-border"></div>
         </div>
     </div>
 
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
+</header><!-- /.top-area-->
+<!-- main-menu End -->
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+<!--about-us start -->
+<section id="home" class="about-us">
+    <div class="container">
+        <div class="about-us-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="single-about-us">
+                        <div class="about-us-txt">
+                            <h2>
+                                Explorez la beauté du beau monde
+                            </h2>
+                            <div class="about-btn">
+                                <button class="about-view">
+                                    explore now
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.about-us-txt-->
+                    </div><!--/.single-about-us-->
+                </div><!--/.col-->
+                <div class="col-sm-0">
+                    <div class="single-about-us">
+
+                    </div><!--/.single-about-us-->
+                </div><!--/.col-->
+            </div><!--/.row-->
+        </div><!--/.about-us-content-->
+    </div><!--/.container-->
+
+</section><!--/.about-us-->
+<!--about-us end -->
+
+<!--packages start-->
+<section id="pack" class="packages">
+    <div class="container">
+        <div class="gallary-header text-center">
+            <h2>
+                Nos circuits dispo
+            </h2>
+            <p>
+                Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla.
+            </p>
+        </div><!--/.gallery-header-->
+        <div class="packages-content">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="assets/images/packages/p1.jpg" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>italy <span class="pull-right">$499</span></h3>
+                            <div class="packages-para">
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    book now
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="assets/images/packages/p2.jpg" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>england <span class="pull-right">$1499</span></h3>
+                            <div class="packages-para">
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    book now
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="assets/images/packages/p3.jpg" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>france <span class="pull-right">$1199</span></h3>
+                            <div class="packages-para">
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    book now
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="assets/images/packages/p4.jpg" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>india <span class="pull-right">$799</span></h3>
+                            <div class="packages-para">
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    book now
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="assets/images/packages/p5.jpg" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>spain <span class="pull-right">$999</span></h3>
+                            <div class="packages-para">
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    book now
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="assets/images/packages/p6.jpg" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>thailand <span class="pull-right">$799</span></h3>
+                            <div class="packages-para">
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+											</span>
+                                    <i class="fa fa-angle-right"></i> 5 star accomodation
+                                </p>
+                                <p>
+											<span>
+												<i class="fa fa-angle-right"></i>  transportation
+											</span>
+                                    <i class="fa fa-angle-right"></i> food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <button class="about-view packages-btn">
+                                    book now
+                                </button>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+            </div><!--/.row-->
+        </div><!--/.packages-content-->
+    </div><!--/.container-->
+
+</section><!--/.packages-->
+<!--packages end-->
+
+<!-- footer-copyright start -->
+<footer class="footer-copyright">
+    <div class="container">
+        <div class="foot-icons ">
+            <p>&copy; 2021 <a href="https://www.themesine.com">ELOUNDOU MICHELLE</a>. All Right Reserved</p>
+
+        </div><!--/.foot-icons-->
+        <div id="scroll-Top">
+            <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top"
+               title="" data-original-title="Back to Top" aria-hidden="true"></i>
+        </div><!--/.scroll-Top-->
+    </div><!-- /.container-->
+
+</footer><!-- /.footer-copyright-->
+<!-- footer-copyright end -->
+
+
+<script src="assets/js/jquery.js"></script>
+
+<!--modernizr.min.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+<!--bootstrap.min.js-->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/bootsnav.js"></script>
+
+<script src="assets/js/jquery.filterizr.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="assets/js/jquery-ui.min.js"></script>
+
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<script src="assets/js/jquery.sticky.js"></script>
+
+<script src="assets/js/datepicker.js"></script>
+
+<script src="assets/js/custom.js"></script>
+
+</body>
 
 </html>
-<!-- end document-->
