@@ -1,23 +1,25 @@
 <?php
 
-    // Enable us to use Headers
-    ob_start();
+    // constantes d'environnement
+    define("DBHOST", "localhost");
+    define("DBUSER", "root");    
+    define("DBPASS", "");    
+    define("DBNAME", "vitemonvol");
+    
+    // DSN de connexion
+    $dsn = "mysql:dbname=".DBNAME.";host=".DBHOST;
 
-    // Set sessions
-    if(!isset($_SESSION)) {
-        session_start();
-    }
-
-    $dbhost="localhost";
-    $port=3306;
-    $dbname="monvol";
-    $user="root";
-    $pwd="";
-
+    // On va ce connecter à la base
     try{
-        $connexion = new PDO('mysql:host=' .$dbhost. ';port='.$port.';dbname='.$dbname.'',$user,$pwd);
-        echo "connexion reussi";
+        // On instancie PDO
+        $connexion = new PDO($dsn, DBUSER, DBPASS);
+        
+        //Envoyer les données en UTF8
+        $connexion->exec("SET NAMES utf8");
+
+        //Definition du mode de fetch par défaut
+        $connexion->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }
-    catch(PDOexception $except){
-        printf("echec de la connexion");
+    catch(PDOException $except){
+        die("Erreur:".$except->getMessage());
     }
